@@ -12,7 +12,7 @@ tweets_df = pd.DataFrame()
 dfm = pd.DataFrame()
 st.write("# Twitter data scraping")
 option = st.selectbox('How would you like the data to be searched?',('Keyword', 'Hashtag'))
-word = st.text_input('Please enter a '+option, 'Example: LIC Policy')
+word = st.text_input('Please enter a '+option, 'vijay')
 start = st.date_input("Select the start date", datetime.date(2022, 1, 1),key='d1')
 end = st.date_input("Select the end date", datetime.date(2023, 1, 1),key='d2')
 tweet_c = st.slider('How many tweets to scrape', 0, 1000, 5)
@@ -73,7 +73,7 @@ if not tweets_df.empty:
 
 # SIDEBAR
 with st.sidebar:   
-    st.write('Uploaded Datasets: ')
+    st.write('Uploaded Database: ')
     for i in mydb.list_collection_names():
         mycollection=mydb[i]
         #st.write(i, mycollection.count_documents({}))        

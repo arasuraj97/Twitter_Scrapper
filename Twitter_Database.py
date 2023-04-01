@@ -1,6 +1,5 @@
-pip3 install snscrape
+pip3 install git+https://github.com/JustAnotherArchivist/snscrape.git
 import snscrape.modules.twitter as sntwitter
-pip3 install snscrape
 import pandas as pd
 import streamlit as st
 import datetime

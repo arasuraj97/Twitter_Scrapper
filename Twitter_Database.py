@@ -80,10 +80,6 @@ with st.sidebar:
         if st.button(i):            
             dfm = pd.DataFrame(list(mycollection.find())) 
 
-# DISPLAY THE DOCUMENTS IN THE SELECTED COLLECTION
-if not dfm.empty: 
-    st.write( len(dfm),'Records Found')
-    st.write(dfm) 
 
 
             

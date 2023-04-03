@@ -40,7 +40,7 @@ else:
     st.warning(option,' cant be empty', icon="⚠️")
 
 # DOWNLOAD AS CSV
-@st.cache # IMPORTANT: Cache the conversion to prevent computation on every rerun
+@st.cache_data # IMPORTANT: Cache the conversion to prevent computation on every rerun
 def convert_df(df):    
     return df.to_csv().encode('utf-8')
 
